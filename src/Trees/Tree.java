@@ -114,8 +114,7 @@ public String toString() {
         if(node.left!=null && node.right!=null)  {
             if (Math.abs(node.left.size - node.right.size) > rank)
                 balance = false;
-//            else
-//                balance = true;
+
         } else if(node.right==null && node.left!=null) {
             if (Math.abs(node.left.size - 0) > rank)
                 balance=   false;
@@ -124,8 +123,7 @@ public String toString() {
          else  if(node.right!=null && node.left==null) {
             if (Math.abs(node.right.size - 0) > rank)
                 balance=  false;
-//            else
-//                balance = true;
+
         }
 
         System.out.println("Узел:" +node.key+" баланс:"+balance+" ");
