@@ -119,7 +119,7 @@ public String toString() {
         } else if(node.right==null && node.left!=null) {
             if (Math.abs(node.left.size - 0) > rank)
                 balance=   false;
-;
+
           }
          else  if(node.right!=null && node.left==null) {
             if (Math.abs(node.right.size - 0) > rank)
