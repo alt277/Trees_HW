@@ -119,8 +119,7 @@ public String toString() {
         } else if(node.right==null && node.left!=null) {
             if (Math.abs(node.left.size - 0) > rank)
                 balance=   false;
-//            else
-//                balance = true;
+;
           }
          else  if(node.right!=null && node.left==null) {
             if (Math.abs(node.right.size - 0) > rank)
@@ -135,7 +134,7 @@ public String toString() {
         if(node.right!=null) isBalanced(node.right,rank);
       return balance;
     }
-    
+
     public Key minKey() {
         return min(root).key;
     }
